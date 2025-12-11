@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
