@@ -1,7 +1,6 @@
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  // Remove standalone output - causes issues on Vercel
   images: {
     remotePatterns: [
       {
@@ -10,6 +9,8 @@ const nextConfig = {
       },
     ],
   },
+  // Disable experimental features that might conflict
+  experimental: {},
 }
 
 module.exports = nextConfig
